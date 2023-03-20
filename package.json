@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "npx mocha -w --parallel ./aula5/app.test.js",
     "start": "node .src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:cov":"npx nyc npx mocha --parallel ./aula5/app.test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sinon": "^9.2.4"
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.4",
+    "supertest": "^6.3.3"
   }
 }

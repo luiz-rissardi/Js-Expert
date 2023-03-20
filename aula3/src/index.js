@@ -1,5 +1,4 @@
 class EstateMissori{
-    tax
     constructor(tax){
         this.tax = tax;
     }
