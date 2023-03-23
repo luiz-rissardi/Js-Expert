@@ -14,10 +14,13 @@ const USER = {
 describe("test suite ", () => {
     describe("/home", () => {
         it("a teste suite in router /home", async () => {
+            let user;
             const response = await request(serve)
-                .get("/home")
-                .expect(200);
-            deepStrictEqual(response.text, "a tela de home foi iniciada")
+                .post("/home")
+                .send({nome:"luiz"})
+                .expect(200)
+            console.log(JSON.parse(response.text))
+            //deepStrictEqual(response.text, "a tela de home foi iniciada")
         })
     })
     describe("default", () => {

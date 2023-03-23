@@ -19,9 +19,13 @@ const route = [
     },
     {
         Path: "/home",
-        func: (req, res) => {
-            res.write("a tela de home foi iniciada");
-            res.end();
+        func: async (req, res) => {
+            //console.log(req.body)
+            for await(let data of req){
+                const user = JSON.parse(data)
+                res.write(JSON.stringify(user));
+                res.end();
+            }
         }
     },
 ]

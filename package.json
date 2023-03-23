@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha -w --parallel ./aula5/app.test.js",
+    "test": "npx mocha -w --parallel ./aula7/test/app.test.js",
     "start": "node .src/index.js",
     "test:cov":"npx nyc npx mocha --parallel ./aula5/app.test.js"
   },
