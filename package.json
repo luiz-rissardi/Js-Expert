@@ -3,17 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "npx mocha -w --parallel ./aula7/test/app.test.js",
-    "start": "node .src/index.js",
-    "test:cov":"npx nyc npx mocha --parallel ./aula5/app.test.js"
+    "test": "npx jest module13/tests/index.test.js",
+    "start": "nodemon module14/src/index.js",
+    "test:cov": "npx nyc npx mocha --parallel ./module13/tests/index.test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mocha": "^8.4.0",
+    "chai": "^4.3.7",
+    "is-email": "^1.0.2",
+    "jest": "^26.6.3",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.22",
     "nyc": "^15.1.0",
+    "safe-regex": "^2.1.1",
     "sinon": "^9.2.4",
     "supertest": "^6.3.3"
   }

@@ -1,0 +1,4 @@
+nome idade id
+luiz 17 63242
+luiz 17 63242
+luiz 17 63242
