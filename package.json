@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "npx jest module13/tests/index.test.js",
-    "start": "nodemon module14/src/index.js",
+    "test": "npx mocha module15/test/index.test.js",
+    "start": "nodemon module15/src/index.js",
     "test:cov": "npx nyc npx mocha --parallel ./module13/tests/index.test.js"
   },
   "keywords": [],
