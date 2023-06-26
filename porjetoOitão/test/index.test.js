@@ -29,7 +29,6 @@ describe("test suit", () => {
         const path = join(__dirname + ROUTES + fileName);
         const data = await App.getContentData(fileName);
         console.log(data)
-        
     })
 })
 
